@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".ChatFragment">
+    <EditText
+        android:layout_margin="7dp"
+        android:id="@+id/etFilter"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/search_view_bg"
+        android:hint="Search"
+        android:padding="10dp"
+        android:drawableStart="@drawable/ic_baseline_search_24"
+        android:drawablePadding="10dp"
+        android:drawableEnd="@drawable/ic_baseline_mic_24"
+        android:imeOptions="actionDone"
+         />
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:paddingEnd="0dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/hl_photo_1"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/photo2"
+                    app:shapeAppearanceOverlay="@style/circular" />
+
+                <TextView
+                    android:id="@+id/tv_status_name_1"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/hl_photo_1"
+                    android:layout_alignStart="@id/hl_photo_1"
+                    android:layout_alignEnd="@id/hl_photo_1"
+                    android:text="Juan"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="10dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:paddingEnd="0dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/hl_photo_2"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/photo2"
+                    android:textSize="10dp"
+                    app:shapeAppearanceOverlay="@style/circular" />
+
+                <TextView
+                    android:id="@+id/tv_status_name_2"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/hl_photo_2"
+                    android:layout_alignStart="@id/hl_photo_2"
+                    android:layout_alignEnd="@id/hl_photo_2"
+                    android:text="Juan"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="10dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:paddingEnd="0dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/hl_photo_3"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/photo2"
+                    app:shapeAppearanceOverlay="@style/circular" />
+
+                <TextView
+                    android:id="@+id/tv_status_name_3"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/hl_photo_3"
+                    android:layout_alignStart="@id/hl_photo_3"
+                    android:layout_alignEnd="@id/hl_photo_3"
+                    android:text="Juan"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="10dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:paddingEnd="0dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/hl_photo_4"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/photo2"
+                    app:shapeAppearanceOverlay="@style/circular" />
+
+                <TextView
+                    android:id="@+id/tv_status_name_4"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/hl_photo_4"
+                    android:layout_alignStart="@id/hl_photo_4"
+                    android:layout_alignEnd="@id/hl_photo_4"
+                    android:text="Juan"
+                    android:textSize="10dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewChat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp" />
+
+</LinearLayout>

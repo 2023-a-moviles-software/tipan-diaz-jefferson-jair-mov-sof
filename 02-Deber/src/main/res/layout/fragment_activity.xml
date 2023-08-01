@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="598dp">
+        <EditText
+            android:layout_margin="7dp"
+            android:id="@+id/etFilterActivity"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/search_view_bg"
+            android:hint="Search"
+            android:padding="10dp"
+            android:drawableStart="@drawable/ic_baseline_search_24"
+            android:drawablePadding="10dp"
+            android:drawableEnd="@drawable/ic_baseline_mic_24"
+            android:imeOptions="actionDone"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_alignTop="@id/etFilterActivity"
+            android:layout_marginTop="55dp"
+            android:src="@drawable/photo_activity_astatus" />
+
+    </RelativeLayout>
+
+</FrameLayout>
