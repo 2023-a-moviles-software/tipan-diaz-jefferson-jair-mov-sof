@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditarConjunto">
+
+    <TextView
+        android:id="@+id/tv_titulo_conjunto_editado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Predeterminado"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#F44336"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.042" />
+
+    <TextView
+        android:id="@+id/tv_nombre_conjunto_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Nombre "
+        android:textColor="#3F51B5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.127"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_titulo_conjunto_editado" />
+
+    <EditText
+        android:id="@+id/txt_nombre_conjunto_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="36dp"
+        android:ems="10"
+        android:hint="Nombre del conjunto"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_nombre_conjunto_edit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/tv_nombre_conjunto_edit"
+        app:layout_constraintTop_toTopOf="@+id/tv_nombre_conjunto_edit"
+        app:layout_constraintVertical_bias="0.461" />
+
+    <TextView
+        android:id="@+id/tv_direccion_conjunto_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Direccion"
+        android:textColor="#3F51B5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.113"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nombre_conjunto_edit" />
+
+    <EditText
+        android:id="@+id/txt_direccion_conjunto_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:hint="Direccion del conjunto"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_direccion_conjunto_edit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.971"
+        app:layout_constraintStart_toEndOf="@+id/tv_direccion_conjunto_edit"
+        app:layout_constraintTop_toTopOf="@+id/tv_direccion_conjunto_edit"
+        app:layout_constraintVertical_bias="0.692" />
+
+    <TextView
+        android:id="@+id/tv_RUC_editado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="RUC"
+        android:textColor="#3F51B5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.104"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_direccion_conjunto_edit" />
+
+    <EditText
+        android:id="@+id/txt_RUC_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:hint="RUC del conjunto"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_RUC_editado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.98"
+        app:layout_constraintStart_toEndOf="@+id/tv_RUC_editado"
+        app:layout_constraintTop_toTopOf="@+id/tv_RUC_editado"
+        app:layout_constraintVertical_bias="0.692" />
+
+    <TextView
+        android:id="@+id/tv_telefono_editado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="Telefono"
+        android:textColor="#3F51B5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.112"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_RUC_editado" />
+
+    <EditText
+        android:id="@+id/txt_telefono_editado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:hint="Telefono del conjunto"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_telefono_editado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.959"
+        app:layout_constraintStart_toEndOf="@+id/tv_telefono_editado"
+        app:layout_constraintTop_toTopOf="@+id/tv_telefono_editado"
+        app:layout_constraintVertical_bias="0.461" />
+
+    <TextView
+        android:id="@+id/tv_propietatio_editado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Propietario"
+        android:textColor="#3F51B5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.116"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_telefono_editado"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/txt_propietario_editado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:hint="Propietario del conjunto"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_propietatio_editado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.966"
+        app:layout_constraintStart_toEndOf="@+id/tv_propietatio_editado"
+        app:layout_constraintTop_toTopOf="@+id/tv_propietatio_editado"
+        app:layout_constraintVertical_bias="0.692" />
+
+    <Button
+        android:id="@+id/btn_Actualizar_conjunto"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Actualizar"
+        android:textColor="#FFC107"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_propietatio_editado"
+        app:rippleColor="#000000" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
